@@ -6,7 +6,7 @@ import SearchBar from "./SearchBar";
 
 const AuthorList = props => {
   const [authors, setAuthors] = useState([]);
-  
+
   const [query, setQuery] = useState("");
 
   const filterAuthors = query => setQuery(query);
@@ -25,6 +25,7 @@ const AuthorList = props => {
     />
   ));
 
+  
   return (
     <div className="authors">
       <h3>Authors</h3>
